@@ -1,4 +1,14 @@
-This is your new Play 2.1 application
-=====================================
+My first Play Framework test application that:
 
-This file will be packaged with your application, when using `play dist`.
+1. parses an input url
+2. reads from the flixster_user table in the snapshot databases
+3. return JSON response
+
+Files that I created / updated:
+
+app/controllers/Application.java 
+app/models/flixster_user.java
+conf/META-INF/persistence.xml - added hibernate config for database
+conf/application.conf - added jpa.default definition
+conf/routes
+project/Build.scala - added javaJpa, mysql, org.hibernate dependencies
